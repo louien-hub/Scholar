@@ -56,7 +56,7 @@ const firebaseConfig = {
     var academicYear = academicYearInput.value;
 
     // Generate unique userID
-    var userID = "MBN-" + new Date().getTime(); // Using timestamp for simplicity
+    var userID = municipalityInput.value + "-" + new Date().getTime(); // Using timestamp for simplicity
   
     // Push data to Firebase
     database.ref(municipalityInput.value).child(userID).set({
